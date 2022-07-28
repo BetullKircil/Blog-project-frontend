@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaydol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./GirisSayfasi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class = "navbar navbar-dark bg-dark navbar-expand-lg text-white justify-content-center">
+        <div class="container py-2">
+            <a id = "blogPusulam" href="#" class = "navbar-brand">BLOG PUSULAM</a>
+
+            <div class="collapse navbar-collapse justify-content-end" id = "navbar-blog">
+                <div class="navbar-nav">
+                    <div id = "oturum-ac-menu" class="nav-item px-3">
+                        <a id = "oturum-ac-menu-content" href="#" class = "nav-link" role = "button">OTURUM AÇ</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <section class = "Login-section py-5">
+        <div class="container">
+            <div class="row">
+                <div id = "login-container" class="col-md-6">
+                    <h1 id = "login-header">Kaydol</h1>
+                    <div class="mb-3">
+                      <form class="row g-3">
+                        <div class="col-md-8">
+                          <label for="validationDefault01" class="form-label">Kullanıcı adınız</label>
+                          <input type="text" class="form-control" id="validationDefault01"  required>
+                        </div>
+                        <div class="col-md-8">
+                          <label for="validationDefaultUsername" class="form-label">email</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <label for="validationDefault02" class="form-label">Şifreniz</label>
+                          <input type="password" class="form-control" id="validationDefault02" required>
+                        </div>
+                        <div class="col-12">
+                          <button id = "login-button" class="btn btn-primary" type="submit">Giriş yap</button> 
+                        </div>
+                        <a href="#" id="account-query">Zaten hesabın var mı?</a>
+                      </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <footer>
+        <div id="socialMediaIcons">
+            <a id = "twitter" href="#"><i class = "fab fa-twitter"></i></a>
+            <a id = "linkedin" href="#"><i class = "fab fa-linkedin"></i></a>
+            <a id = "github" href="#"><i class = "fab fa-github"></i></a>
+        </div>
+        <p class="licence">Copyright © Your Website 2022</p>
+    </footer>
+    <script src="./GirisSayfasi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

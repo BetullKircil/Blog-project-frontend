@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ana Sayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class = "navbar navbar-dark bg-dark navbar-expand-lg text-white justify-content-center">
+        <div class="container py-2">
+            <a id = "blogPusulam" href="#" class = "navbar-brand">BLOG PUSULAM</a>
+            <button class = "navbar-toggler" data-toggle = "collapse" data-target = "#navbar-blog" aria-controls="navbar-blog">
+                <span class ="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id = "navbar-blog">
+                <div class="navbar-nav">
+                    <div id = "postMenu" class="nav-itemActive px-3">
+                        <button type = "button" id = "postContent" href="#" class = "nav-link active btn btn-warning btn btn-secondary"
+                         data-bs-toogle = "tooltip" data-bs-placement="top" data-bs-html="true" data-bs-custom-class="custom-tooltip"
+                         title="Kendi yazılarınızı özgürce paylaşabilirsiniz.">YENİ POST</button>
+                    </div>
+                    <div id = "profileMenu" class="nav-item px-3 dropdown show">
+                        <a id = "profileContent" href="#" class = "nav-link dropdown-toggle" role = "button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id = "profileIcon" src="./person.svg">PROFİL</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a role = "button" class="dropdown-item" href="#">Profilimi düzenle</a>
+                            <a role = "button" class="dropdown-item" href="#">Bloglarım</a>
+                            <a role = "button" class="dropdown-item" href="#">Çıkış yap</a>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <section class="mainSection py-5">
+            <h1 id="firstHeader">Sen de Yaz!</h1>
+            <p id = "firstParagraph">Bazen bir kalem bütün hayatı baştan yazar...</p>
+    </section>
+    <section class="blogSection py-5">
+        <div class="container">
+            <div id = "row" class="row">
+              <div id = "first-blog" class="col-6 col-sm-4">
+                <h3 style = "margin-top: 30px;" onclick="İlkBlogTikla()" id = "first-blog-header" data-bs-toggle="tooltip" title="Blog başlığı">Birinci Blog</h3>
+                <p style = "margin-top: 30px;" onclick = "İlkBlogTikla()" id = "first-blog-content" data-bs-toggle="tooltip" title="Blog içeriği">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur perspiciatis veniam quam, eveniet sequi numquam quod optio pariatur, eligendi autem provident. Consequatur facere ea quas aliquid molestias facilis deserunt quo?</p>
+              </div>
+              <div id = "second-blog" class="col-6 col-sm-4">
+                <h3 style = "margin-top: 30px;" onclick = "İkinciBlogTikla()" id = "second-blog-header" data-bs-toggle="tooltip" title="Blog başlığı">İkinci Blog</h3>
+                <p style = "margin-top: 30px;" onclick = "İkinciBlogTikla()" id = "second-blog-content" data-bs-toggle="tooltip" title="Blog içeriği">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, laborum ratione quam inventore in eius eaque vitae non nihil quia distinctio quo ipsa nostrum, assumenda illo ex similique aut voluptatem.</p>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+          
+              <div id = "third-blog" class="col-6 col-sm-4">
+                <h3 style = "margin-top: 30px;" onclick = "ÜcüncüBlogTikla()" id = "third-blog-header" data-bs-toggle="tooltip" title="Blog başlığı">Üçüncü Blog</h3>
+                <p style = "margin-top: 30px;" onclick = "ÜcüncüBlogTikla()" id = "third-blog-content" data-bs-toggle="tooltip" title="Blog içeriği">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident enim voluptatibus eius necessitatibus facilis distinctio, unde minima nemo, possimus fugiat saepe ducimus. Nemo aut ea itaque molestiae sed enim expedita.</p>
+              </div>
+              <div id = "fourth-blog" class="col-6 col-sm-4">
+                <h3 style = "margin-top: 30px;" onclick = "DördüncüBlogTikla()" id = "fourth-blog-header" data-bs-toggle="tooltip" title="Blog başlığı">Dördüncü Blog</h3>
+                <p style = "margin-top: 30px;" onclick = "DördüncüBlogTikla()" id = "fourth-blog-content" data-bs-toggle="tooltip" title="Blog içeriği">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt necessitatibus voluptatem et, dolore quia unde quod alias fugiat aliquid consequatur porro veritatis est similique dignissimos iste obcaecati delectus vel repellat.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <div id="socialMediaIcons">
+            <a id = "twitter" href="#"><i class = "fab fa-twitter"></i></a>
+            <a id = "linkedin" href="#"><i class = "fab fa-linkedin"></i></a>
+            <a id = "github" href="#"><i class = "fab fa-github"></i></a>
+        </div>
+        <p class="licence">Copyright © Your Website 2022</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
